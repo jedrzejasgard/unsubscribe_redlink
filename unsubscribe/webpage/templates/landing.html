@@ -6,16 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Unsubscribe</title>
+    <style>
+      .jumbotron{
+        max-width: 500px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <div class="container">
+  <div class="container">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3 float-md-center">
       <div class="jumbotron">
-        d
+        <ul id='myTab' class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#tab-PL" class="nav-link active" data-toggle="tab">PL</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tab-EN" class="nav-link" data-toggle="tab">EN</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tab-DE" class="nav-link" data-toggle="tab">DE</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tab-FR" class="nav-link" data-toggle="tab">FR</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+
+            <div class="tab-pane fade show active" id="tab-PL">
+                <h1>Dziekujemy że z nami byłeś</h1>
+                <h3>Wypisłeś sięz naszej listy mailingowej. <br>
+                  Podziel się opinią dlaczego podjąłeś taką decyzję.
+                </h3>
+                <form action="">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="form_unsubscribe" id="za_duzo" value="option1" checked>
+                  <label class="form-check-label" for="za_duzo">
+                    Za duża ilość maili, za często wusułane
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="form_unsubscribe" id="tresc_nieinteresuje" value="option2">
+                  <label class="form-check-label" for="tresc_nieinteresuje">
+                    Treść nnie jest dla mnie interesująca
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="form_unsubscribe" id="graficznie_nieinteresujace" value="option1" checked>
+                  <label class="form-check-label" for="graficznie_nieinteresujace">
+                    Od grafik krwawią oczy
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="form_unsubscribe" id="tylko_promocje" value="option1" checked>
+                  <label class="form-check-label" for="tylko_promocje">
+                    Zapisałem się przez przypadek
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="form_unsubscribe" id="inne" value="option1" checked>
+                  <label class="form-check-label" for="inne">
+                    Inny, opisze poniżej
+                  </label>
+                </div>
+                <textarea id="inny_powod" name="inny_powod" rows="4" cols="50">Wpisz dlaczego zniechęcilismy cię do naszych
+                  wiadomości reklamowych</textarea>
+
+                <p><button class="btn btn-primary" type="submit">Wyślij opinię</button></p>
+                    <button class="btn btn-primary"><a href="https://asgard.gifts/" style="">Strona asgardu</a></button>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="tab-EN">
+                EN
+                <p>Temat:<input id="EN-temat" type="text"></p>
+
+                <p> <strong>Zobacz go już dzisiaj klikając w ten <input type="text" id="EN-yt"> </strong></p>
+                <p>Prezentację przedstawionych produktów w formie pdf możesz przejrzeć klikając <input type="text" id="EN-prezentacja"></p>
+                <p>Zaprezentowane powyżej produkty zostaną  dodane do naszej oferty <input type="text" id="EN-termin">.
+            </div>
+            <div class="tab-pane fade" id="tab-DE">
+                DE
+                <p>Temat:<input id="DE-temat" type="text"></p>
+
+                <p> <strong>Zobacz go już dzisiaj klikając w ten <input type="text" id="DE-yt"> </strong></p>
+                <p>Prezentację przedstawionych produktów w formie pdf możesz przejrzeć klikając <input type="text" id="DE-prezentacja"></p>
+                <p>Zaprezentowane powyżej produkty zostaną  dodane do naszej oferty <input type="text" id="DE-termin">.
+            </div>
+            <div class="tab-pane fade" id="tab-FR">
+                FR
+                <p>Temat:<input id="FR-temat" type="text"></p>
+
+                <p> <strong>Zobacz go już dzisiaj klikając w ten <input type="text" id="FR-yt"> </strong></p>
+                <p>Prezentację przedstawionych produktów w formie pdf możesz przejrzeć klikając <input type="text" id="FR-prezentacja"></p>
+                <p>Zaprezentowane powyżej produkty zostaną  dodane do naszej oferty <input type="text" id="FR-termin">.
+            </div>
+        </div>
       </div>
+    </div>
+  </div>
+
+      </div>
+
     </div>
 
     <!-- Optional JavaScript -->
