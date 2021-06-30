@@ -13,7 +13,7 @@ def landing(request):
 def wyslij_opinie(request):
     if request == 'POST':
         dzisiaj = str(datetime.date.today())
-        
+
         przyczynaWypisania.objects.create(
             kiedy_dodany=dzisiaj,
             za_duzo=0,

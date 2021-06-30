@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
 
     <title>Unsubscribe</title>
     <style>
@@ -27,15 +27,9 @@
             <li class="nav-item">
                 <a href="#tab-EN" class="nav-link" data-toggle="tab">EN</a>
             </li>
-            <li class="nav-item">
-                <a href="#tab-DE" class="nav-link" data-toggle="tab">DE</a>
-            </li>
-            <li class="nav-item">
-                <a href="#tab-FR" class="nav-link" data-toggle="tab">FR</a>
-            </li>
+
         </ul>
         <div class="tab-content">
-
             <div class="tab-pane fade show active" id="tab-PL">
                 <h1>Dziekujemy że z nami byłeś</h1>
                 <h3>Wypisłeś sięz naszej listy mailingowej. <br>
@@ -43,13 +37,13 @@
                 </h3>
                 <form action="">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="form_unsubscribe" id="za_duzo" value="option1" checked>
-                  <label class="form-check-label" for="za_duzo">
+                  <input class="form-check-input za_duzo" type="radio" name="form_unsubscribe" id="za_duzo_label" value="option1" checked>
+                  <label class="form-check-label" for="za_duzo_label">
                     Za duża ilość maili, za często wusułane
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="form_unsubscribe" id="tresc_nieinteresuje" value="option2">
+                  <input class="form-check-input nieinteresujace" type="radio" name="form_unsubscribe" id="tresc_nieinteresuje" value="option2">
                   <label class="form-check-label" for="tresc_nieinteresuje">
                     Treść nnie jest dla mnie interesująca
                   </label>
@@ -72,47 +66,69 @@
                     Inny, opisze poniżej
                   </label>
                 </div>
-                <textarea id="inny_powod" name="inny_powod" rows="4" cols="50">Wpisz dlaczego zniechęcilismy cię do naszych
+                <textarea id="inny_powod"  class ="textareainne" name="inny_powod" rows="4" cols="50">Wpisz dlaczego zniechęcilismy cię do naszych
                   wiadomości reklamowych</textarea>
 
-                <p><button class="btn btn-primary" type="submit">Wyślij opinię</button></p>
+                <p><button class="btn btn-primary btn_wyslij" type="submit">Wyślij opinię</button></p>
                     <button class="btn btn-primary"><a href="https://asgard.gifts/" style="">Strona asgardu</a></button>
               </form>
             </div>
             <div class="tab-pane fade" id="tab-EN">
-                EN
-                <p>Temat:<input id="EN-temat" type="text"></p>
+                <h1>Thank you for being with us</h1>
+                <h3>You have unsubscribed from our mailing list.<br>
+                  Share your opinion why you made such a decision.
+                </h3>
+                <form action="">
+                <div class="form-check">
+                  <input class="form-check-input za_duzo" type="radio" name="form_unsubscribe" id="za_duzo_label_en" value="option1" checked>
+                  <label class="form-check-label" for="za_duzo_label_en">
+                    Za duża ilość maili, za często wusułane
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input nieinteresujace" type="radio" name="form_unsubscribe" id="tresc_nieinteresuje_en" value="option2">
+                  <label class="form-check-label" for="tresc_nieinteresuje_en">
+                    Treść nnie jest dla mnie interesująca
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="form_unsubscribe" id="graficznie_nieinteresujace_en" value="option1" checked>
+                  <label class="form-check-label" for="graficznie_nieinteresujace_en">
+                    Od grafik krwawią oczy
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="form_unsubscribe" id="tylko_promocje_en" value="option1" checked>
+                  <label class="form-check-label" for="tylko_promocje_en">
+                    Zapisałem się przez przypadek
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="form_unsubscribe" id="inne_en" value="option1" checked>
+                  <label class="form-check-label" for="inne_en">
+                    Inny, opisze poniżej
+                  </label>
+                </div>
+                <textarea id="inny_powod_en" class ="textareainne" name="inny_powod_en" rows="4" cols="50">Wpisz dlaczego zniechęcilismy cię do naszych
+                  wiadomości reklamowych</textarea>
 
-                <p> <strong>Zobacz go już dzisiaj klikając w ten <input type="text" id="EN-yt"> </strong></p>
-                <p>Prezentację przedstawionych produktów w formie pdf możesz przejrzeć klikając <input type="text" id="EN-prezentacja"></p>
-                <p>Zaprezentowane powyżej produkty zostaną  dodane do naszej oferty <input type="text" id="EN-termin">.
-            </div>
-            <div class="tab-pane fade" id="tab-DE">
-                DE
-                <p>Temat:<input id="DE-temat" type="text"></p>
-
-                <p> <strong>Zobacz go już dzisiaj klikając w ten <input type="text" id="DE-yt"> </strong></p>
-                <p>Prezentację przedstawionych produktów w formie pdf możesz przejrzeć klikając <input type="text" id="DE-prezentacja"></p>
-                <p>Zaprezentowane powyżej produkty zostaną  dodane do naszej oferty <input type="text" id="DE-termin">.
-            </div>
-            <div class="tab-pane fade" id="tab-FR">
-                FR
-                <p>Temat:<input id="FR-temat" type="text"></p>
-
-                <p> <strong>Zobacz go już dzisiaj klikając w ten <input type="text" id="FR-yt"> </strong></p>
-                <p>Prezentację przedstawionych produktów w formie pdf możesz przejrzeć klikając <input type="text" id="FR-prezentacja"></p>
-                <p>Zaprezentowane powyżej produkty zostaną  dodane do naszej oferty <input type="text" id="FR-termin">.
+                <p><button class="btn btn-primary btn_wyslij" type="submit">Wyślij opinię</button></p>
+                    <button class="btn btn-primary"><a href="https://asgard.gifts/" style="">Strona asgardu</a></button>
+              </form>
             </div>
         </div>
       </div>
     </div>
   </div>
 
-      </div>
-
-    </div>
+  </div>
 
     <!-- Optional JavaScript -->
+  <script>
+    $('.btn_wyslij').click(function (){
+        alert('wyslij')
+    })
+  </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
